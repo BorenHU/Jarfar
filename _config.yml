@@ -4,11 +4,11 @@
 
 # Site
 title: Jayfar
-subtitle: ''
-description: ''
+subtitle: 
+description: 
 keywords:
 author: Jayfar
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -46,14 +46,19 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+prism_plugin:
+  mode: 'preprocess' # 或 'render', 默认为 'preprocess'
+  theme: 'default'  # 选择 Prism 的代码高亮主题，如 'default', 'dark', 'okaidia' 等
+  line_number: true  # 显示行号
+  copy_btn: false    # 是否显示“复制代码”按钮
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
