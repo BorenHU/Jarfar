@@ -359,7 +359,7 @@ waline:
 twikoo:
   envId: https://twikoo-seven-delta-80.vercel.app
   region:
-  visitor: false
+  visitor: true
   option:
 
 # Artalk
