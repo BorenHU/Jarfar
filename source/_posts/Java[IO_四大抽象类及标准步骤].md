@@ -15,7 +15,7 @@ date: 2020-04-14 23:23:27
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 IO_四大抽象类

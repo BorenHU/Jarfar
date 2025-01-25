@@ -16,7 +16,7 @@ date: 2020-04-22 17:35:24
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 多线程编程②[Java]

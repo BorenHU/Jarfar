@@ -15,7 +15,7 @@ author:
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 作为小白一直在使用for循环对数组进行复制，添加和删除，学习过程中发现ArrayCopy（）方法在对数组进行删除，添加的时候更加高效，便利。

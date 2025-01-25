@@ -15,7 +15,7 @@ date: 2020-04-15 09:33:12
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 输入流读取数据，输出流写入数据，在输入的同时，进行输出实现数据的拷贝

@@ -15,7 +15,7 @@ date: 2020-04-10 21:43:01
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 什么是泛型？

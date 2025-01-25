@@ -15,7 +15,7 @@ date: 2020-04-08 09:30:38
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 普通方法和构造方法的区别

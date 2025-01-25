@@ -16,7 +16,7 @@ date: 2020-04-24 09:32:55
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 多线程_深度观察状态

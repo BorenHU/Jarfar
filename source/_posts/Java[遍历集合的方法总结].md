@@ -17,11 +17,8 @@ author:
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
-
+thumbnail: 
 ---
-
-![](https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/23.jpg)
 
 <!-- more -->
 

@@ -16,7 +16,7 @@ date: 2020-03-29 22:36:48
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 JavaHashMap底层原理_查找键值对过程

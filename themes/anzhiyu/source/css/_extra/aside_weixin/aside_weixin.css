@@ -1,5 +1,5 @@
 #aside-content .card-widget#card-wechat {
-  background: #57bd6a;
+  background: #07c160;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -9,7 +9,7 @@
   height: 110px;
 }
 [data-theme="dark"] #aside-content .card-widget#card-wechat {
-  background-color: #121121;
+  background-color: #07c160;
   border: var(--style-border);
 }
 

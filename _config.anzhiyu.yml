@@ -4,22 +4,18 @@ menu:
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
 
+  资源 :
+    提升: /tags/Self-investment/ || anzhiyu-icon-anzhiyu
+    书架: /equipment/ || anzhiyu-icon-book
+
   友链:
     友人帐: /link/ || anzhiyu-icon-link
-    朋友圈: /fcircle/ || anzhiyu-icon-artstation
     留言板: /comments/ || anzhiyu-icon-envelope
-
-  我的:
-    音乐馆: /music/ || anzhiyu-icon-music
-    追番页: /bangumis/ || anzhiyu-icon-bilibili
-    相册集: /album/ || anzhiyu-icon-images
-    小空调: /air-conditioner/ || anzhiyu-icon-fan
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
     闲言碎语: /essay/ || anzhiyu-icon-lightbulb
     随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
-    推荐好物: /equipment/ || anzhiyu-icon-dice-d20
 
 # nav相关配置
 nav:
@@ -315,20 +311,20 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
+  use: Twikoo
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   count: true # Display comment count in post's top_img
-  card_post_count: false # Display comment count in Home Page
+  card_post_count: true # Display comment count in Home Page
 
 # valine
 # https://valine.js.org
 valine:
-  appId: xxxxx # leancloud application app id
-  appKey: xxxxx # leancloud application app key
-  pageSize: 10 # comment list page size
+  appId: xUgCeiJI7SGhNOD0a0sgxr49-gzGzoHsz # leancloud application app id
+  appKey: r53YtLpLex6cwJAl2A9RYYuw # leancloud application app key
+  pageSize: 12 # comment list page size
   avatar: mp # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: 填写QQ邮箱就会使用QQ头像喔~. # valine comment input placeholder (like: Please leave your footprints)
@@ -361,7 +357,7 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://twikoo-seven-delta-80.vercel.app
   region:
   visitor: false
   option:
@@ -853,9 +849,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -1056,17 +1052,17 @@ home_top:
   siteText: Jayfar.top
   category:
     - name: 技术
-      path: /categories/技术/
+      path: /categories/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 爱好
-      path: /categories/爱好/
+    - name: 资源
+      path: /categories/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 生活
-      path: /categories/生活/
+    - name: 软件
+      path: /categories/
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: anzhiyu-icon-book
@@ -1102,10 +1098,11 @@ console:
   enable: true
 
 # 51a统计配置
+      # 51a统计配置
 LA:
-  enable: false
-  ck:
-  LingQueMonitorID:
+  enable: true
+  ck: 3L2mvi73BvIKG598
+  LingQueMonitorID: 3L2nBTDLfYo03D2f
 
 # 标签卖萌
 diytitle:
@@ -1245,7 +1242,10 @@ inject:
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
-
+    # - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+    # - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    # - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>
+    # - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
@@ -1331,3 +1331,4 @@ CDN:
     # waterfall:
     # ali_iconfont_css:
     # accesskey_js:
+

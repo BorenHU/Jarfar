@@ -15,7 +15,7 @@ tags:
 	- Java
 categories:
 	- Java
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 不得不说，有很多java初学者写java实体类的时候，并没有真正理解重写`toString()` 方法，可能是口头知道也可能是跟风随带添加`toString()` 方法，并没有真正理解其意义，如果真要被问起来未必有十足把握回答上 中枪了咩，这篇文章旨在帮助初学者正确解读实体类重写`toString()` 方法。

@@ -16,7 +16,7 @@ date: 2020-04-23 00:36:34
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 多线程的终止[Java]

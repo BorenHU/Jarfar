@@ -16,7 +16,7 @@ date: 2020-04-22 00:31:28
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 多线程\_推导lambda\_简化线程

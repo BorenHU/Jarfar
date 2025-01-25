@@ -16,7 +16,7 @@ author:
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 现实生活中，我们经常需要成对存储某些信息。比如，我们使用的微信，一个手机号只能对应一个微信账户。这就是一种成对存储的关系。

@@ -16,7 +16,7 @@ date: 2020-03-18 00:11:49
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 GUI介绍

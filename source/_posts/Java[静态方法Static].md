@@ -15,7 +15,7 @@ date: 2020-03-24 17:45:16
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 ### static关键字
@@ -315,5 +315,4 @@ public class jingtai{
 - 非静态成员变量和方法伴随着对象的存在而存在。
 
 - 局部变量不赋值都会报错。
-
 

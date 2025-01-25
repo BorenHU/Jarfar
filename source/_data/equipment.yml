@@ -1,10 +1,10 @@
-- class_name: 好物
-  description: 实物装备推荐
-  tip: 跟 安知鱼 一起享受科技带来的乐趣
-  top_background: https://bu.dusays.com/2023/07/05/64a4c38842b7a.webp
+- class_name: 收藏
+  description: 藏宝阁
+  tip: 跟 Jayfar 一起享受知识带来的乐趣
+  top_background: https://img.wjwj.top/2025/01/22/1000922c3a79844bcf57b784243efaaa.png
   good_things:
-    - title: 生产力
-      description: 提升自己生产效率的硬件设备
+    - title: 在读...
+      description: 提升自己认知的硬件设备
       equipment_list:
         - name: MacBook Pro 2021 16 英寸
           specification: M1 Max 64G / 1TB
@@ -26,8 +26,8 @@
           description: 第三代对比第二代提升很大，和我一样不喜欢入耳式耳机的可以入，空间音频等功能确实新颖，第一次使用有被惊艳到。
           image: https://bu.dusays.com/2023/07/05/64a4c3ded6319.webp
           link: https://www.apple.com.cn/airpods-3rd-generation/
-    - title: 出行
-      description: 用来出行的实物及设备
+    - title: 已阅
+      description: 
       equipment_list:
         - name: Apple Watch Series 8
           specification: 黑色

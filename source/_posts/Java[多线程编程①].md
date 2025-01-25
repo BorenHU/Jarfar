@@ -16,7 +16,7 @@ date: 2020-03-17 19:40:22
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 多线程编程

@@ -16,7 +16,7 @@ date: 2020-03-25 22:25:50
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 LinkedList特点和底层实现

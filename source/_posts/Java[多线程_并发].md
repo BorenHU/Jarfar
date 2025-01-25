@@ -16,7 +16,7 @@ date: 2020-04-24 14:24:13
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 多线程\_并发\_非同步\_三大经典案例
 

@@ -15,7 +15,7 @@ date: 2020-04-10 12:28:26
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 Set接口继承自Collection,Set接口中没有新增方法，方法和Collection保持完全一致。我们在前面通过List学习的方法，在Set中仍然适用。因此学习Set的使用将没有任何难度。

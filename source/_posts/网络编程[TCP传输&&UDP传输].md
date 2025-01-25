@@ -10,7 +10,7 @@ tags:
   - 网络编程
 categories:
   - 网络编程
-thumbnail: 'https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/27.jpg'
+thumbnail:
 abbrlink: 26720
 date: 2020-05-05 23:40:59
 author:

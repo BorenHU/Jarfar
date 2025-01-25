@@ -15,7 +15,7 @@ date: 2020-04-10 22:44:54
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 类java.util.Collections提供了对Set, List, Map进行排序，填充，查找元素的辅助方法。

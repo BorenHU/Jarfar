@@ -15,7 +15,7 @@ tags:
   - 多线程
 categories:
   - Java
-thumbnail: 'https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg'
+thumbnail: 
 abbrlink: 10501
 date: 2020-05-01 12:02:03
 author:
@@ -25,7 +25,7 @@ password:
 summary:
 ---
 
-![](https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/23.jpg)<!-- more -->
+<!-- more -->
 
 ---
 

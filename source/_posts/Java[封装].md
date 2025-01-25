@@ -15,7 +15,7 @@ date: 2020-03-24 17:13:02
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 封装[Java]

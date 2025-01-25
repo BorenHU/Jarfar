@@ -15,7 +15,7 @@ date: 2020-04-15 11:36:26
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 文件字符流[Java]

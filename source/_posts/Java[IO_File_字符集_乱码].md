@@ -15,7 +15,7 @@ date: 2020-04-14 16:02:59
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 IO_File\_字符集_乱码

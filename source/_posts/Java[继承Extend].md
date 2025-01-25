@@ -15,7 +15,7 @@ date: 2020-03-24 19:43:10
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 - “继承中的成员变量和方法”
@@ -139,7 +139,6 @@ public class jicheng{
       }
    }
 ```
-
 
 
 

@@ -15,7 +15,7 @@ date: 2020-03-12 14:07:30
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 垃圾回收机制[Java]

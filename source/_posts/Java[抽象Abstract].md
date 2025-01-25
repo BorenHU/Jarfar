@@ -16,7 +16,7 @@ date: 2020-03-24 20:38:04
 img:
 coverImg:
 password:
-thumbnail: https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/25.jpg
+thumbnail: 
 ---
 
 抽象类与接口紧密相关。
