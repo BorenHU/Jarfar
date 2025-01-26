@@ -105,8 +105,11 @@ theme: anzhiyu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
+# deploy:
+#   type: git
+#   repository: git@101.132.143.244:/home/git/blog.git #用户名@服务器Ip:git仓库位置
+#   repository: git@github.com:BorenHU/Jarfar.git
+#   branch: master
 
 
 #envelope_comment
@@ -137,3 +140,19 @@ envelope_comment:
 aplayer:
   meting: true
   asset_inject: false
+
+algolia:
+  appId: "3TRB66Y8RT"
+  apiKey: "a31dc5b416b7151df91d43c70270a344"
+  adminApiKey: "7b0305f23047624904f333aa856a3db1"
+  chunkSize: 5000
+  indexName: "my-hexo-blog"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title

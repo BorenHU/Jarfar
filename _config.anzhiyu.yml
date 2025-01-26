@@ -87,12 +87,12 @@ author_status:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
   tags:
-    # - 前端
-    # - Hexo
+    - 前端
+    - Hexo
 
 # Docsearch
 # Apply and Option Docs: see https://docsearch.algolia.com/
@@ -951,7 +951,7 @@ fancybox: true
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
@@ -1130,7 +1130,7 @@ nav_music:
   id: 8152976493
   server: netease
   volume: 0.7 # 默认音量
-  all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
+  all_playlist: https://music.163.com/playlist?id=426681132&uct2=U2FsdGVkX19BO4fIzYfvmKQmydOzmm66NMhOJQNvinw=
 
 # 路径为 /music 的音乐页面默认加载的歌单 1. nav_music 2. custom
 music_page_default: nav_music
