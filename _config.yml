@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://101.132.143.244
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -143,8 +143,8 @@ aplayer:
 
 algolia:
   appId: "3TRB66Y8RT"
-  apiKey: "a31dc5b416b7151df91d43c70270a344"
-  adminApiKey: "7b0305f23047624904f333aa856a3db1"
+  apiKey: "b1583beb20c982324fdb146a9dadd441"
+  adminApiKey: "d4d0236e370a7d15ee6cb425476706fc"
   chunkSize: 5000
   indexName: "my-hexo-blog"
   fields:

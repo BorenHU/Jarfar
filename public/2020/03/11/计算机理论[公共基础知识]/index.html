@@ -1,0 +1,714 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>公共基础知识[计算机理论] | Jayfar</title><meta name="keywords" content="计算机理论"><meta name="author" content="Jayfar"><meta name="copyright" content="Jayfar"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="公共基础知识[计算机理论]"><meta name="application-name" content="公共基础知识[计算机理论]"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="公共基础知识[计算机理论]"><meta property="og:url" content="http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/index.html"><meta property="og:site_name" content="Jayfar"><meta property="og:description" content="计算机系统公共基础知识    一、数据结构与算法 算法的基本运算和操作：算术运算，逻辑运算，关系运算，数据传输。 算法基本设计方法：列举法、归纳法、递推、递归、减半递推技术。 数据元素：数据元素是数据的基本单位。 数据对象：数据对象是性质相同的数据元素的集合。 数据结构：是指由某一数据对象中所有数据"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg"><meta property="article:author" content="Jayfar"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg"><meta name="description" content="计算机系统公共基础知识    一、数据结构与算法 算法的基本运算和操作：算术运算，逻辑运算，关系运算，数据传输。 算法基本设计方法：列举法、归纳法、递推、递归、减半递推技术。 数据元素：数据元素是数据的基本单位。 数据对象：数据对象是性质相同的数据元素的集合。 数据结构：是指由某一数据对象中所有数据"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: undefined,
+  LA51: {"enable":true,"ck":"3L2mvi73BvIKG598","LingQueMonitorID":"3L2nBTDLfYo03D2f"},
+  greetingBox: undefined,
+  twikooEnvId: 'https://twikoo-seven-delta-80.vercel.app',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":null},
+  navMusic: true,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: undefined,
+  algolia: {"appId":"3TRB66Y8RT","apiKey":"b1583beb20c982324fdb146a9dadd441","indexName":"my-hexo-blog","hits":{"per_page":6},"languages":{"input_placeholder":"输入关键词后按下回车查找","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: Jayfar","link":"链接: ","source":"来源: Jayfar","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Jayfar',
+  title: '公共基础知识[计算机理论]',
+  postAI: '',
+  pageFillDescription: '一、数据结构与算法, 二、程序设计基础, 三、软件工程基础, 四、数据库设计基础计算机系统公共基础知识一数据结构与算法算法的基本运算和操作算术运算逻辑运算关系运算数据传输算法基本设计方法列举法归纳法递推递归减半递推技术数据元素数据元素是数据的基本单位数据对象数据对象是性质相同的数据元素的集合数据结构是指由某一数据对象中所有数据成员之间的关系组成的集合数据的逻辑结构包括数据对象和数据对象之间的关系数据的存储结构包括数据元素的存储方式和关系的存储方式一种数据的逻辑结构可以表示成多种存储结构线性结构的条件一个非空数据结构有且只有一个根结点每一个结点最多有一个前件也最多有一个后件栈队列双向链表是线性结构树二叉树为非线性结构线性表是由一组数据元素构成数据元素的位置只取决于自己的序号元素之间的相对位置是线性的具有一对一逻辑关系的数据最佳的存储方式是使用线性表除根结点与终端结点外其他所有结点有且只有一个前件也有且只有一个后件线性表的存储结构顺序存储结构顺序表图和链式存储结构链表图线性表的顺序存储结构有两个特点线性表中所有元素所占的存储空间连续线性表中各数据元素在存储空间中是按逻辑顺序依次存放的线性表的链式存储结构存储数据结构的存储空间可以不连续各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致结点包含数据域指针域注链式存储方式既可用于表示线性结构也可用于表示非线性结构栈和队列隶属于线性表是特殊的线性表因为它们对线性表中元素的进出做了明确的要求栈具有记忆功能队列没有记忆功能栈的特点是先进后出后进先出所以对一个栈进行出栈操作出来的元素肯定是最后存入栈中的元素所以栈有记忆功能而队列是先进先出取队列的第一个元素得到的是最先存入队列的元素而不是上一个存入队列的元素所以没有记忆功能栈队列的存储结构顺序存储结构用一组地址连续的存储单元即一维数组来存储链式存储线性链表计算循环队列的元素个数尾指针减头指针若为负数再加其容量即可树是个结点的有限集合是一种非线性结构结点的度结点所拥有的子树的个数叶子结点度为的结点分支结点除叶子结点以外的结点结点的层次根结点在第一层树的深度所处层次最大的那个结点的层次树的度树中所有结点的度的最大值二叉树每个结点最多只有两棵子树且有左右之分不能互换二叉树有五种不同的形态在二叉树的第层上最多有个结点深度为的二叉树最多有个结点在任意一棵二叉树中度为的结点叶子结点总是比度为的结点多一个具有个结点的二叉树其深度不小于其中表示为的整数部分满二叉树每一层上的结点数都达到最大值即在满二叉树的第层上有个结点完全二叉树除最后一层外每一层上的结点数均达到最大值在最后一层上只缺少右边的若干结点具有个结点的完全二叉树的深度为完全二叉树中度为的结点数为或前序遍历先访问根结点然后遍历左子树最后遍历右子树并且在遍历左右子树时仍然先访问根结点然后遍历左子树最后遍历右子树中序遍历先遍历左子树然后访问根结点最后遍历右子树并且在遍历左右子树时仍然先遍历左子树然后访问根结点最后遍历右子树后序遍历先遍历左子树然后遍历右子树最后访问根结点并且在遍历左右子树时仍然先遍历左子树然后遍历右子树最后访问根结点顺序查找是从表的一端开始依次扫描表中的各个元素并与所要查找的数进行比较只能采用顺序查找线性表为无序表则不管是顺序存储结构还是链式存储结构只能用顺序查找有序线性表如果采用链式存储结构也只能用顺序查找二分查找的条件用顺序存储结构线性表是有序表对于长度为的有序线性表在最坏情况下二分法查找只需比较次而顺序查找需要比较次排序算法交换类排序冒泡排序法在最坏的情况下冒泡排序需要比较次数为快速排序法在最坏的情况下快速排序需要比较次数为插入类排序简单插入排序法最坏情况需要次比较希尔排序法最坏情况需要次比较选择类排序简单选择排序法最坏情况需要次比较堆排序法最坏情况需要次比较相比以上几种除希尔排序法外堆排序法的时间复杂度最小来源结点的度为结点的度为结点的度为结点的度为以及度都为称为叶子结点二程序设计基础形成良好的程序设计风格需注意源程序文档化数据说明的方法语句的结构输入和输出模块设计要保证低耦合高内聚内聚每个模块尽可能独立完成自己的功能不依赖于模块外部的代码耦合模块与模块之间接口的复杂程度模块之间联系越复杂耦合度越高牵一发而动全身结构化程序设计方法的四条原则自顶向下逐步求精模块化限制使用语句两类循环语句先判断后执行的循环体称为当型循环结构先执行循环体后判断的称为直到型循环结构面向对象的程序设计以对象为核心强调对象的抽象性封装性继承性多态性依赖性对象的基本特点标识惟一性分类性多态性封装性模块独立性好属性即对象所包含的信息它在设计对象时确定一般只能通过执行对象的操作来改变类是具有相似属性与操作的一组对象类是关于对象性质的描述类是对象的抽象对象是其对应类的一个实例消息是一个实例与另一个实例之间传递的信息对象间的通信靠消息传递它请求对象执行某一处理或回答某一要求的信息它统一了数据流和控制流消息的组成包括接收消息的对象的名称消息标识符也称消息名零个或多个参数多态性是指同样的消息被不同的对象接受时可导致完全不同的行动的现象在软件设计过程中必须遵循软件工程的基本原则这些原则包括抽象信息隐蔽模块化局部化确定性一致性完备性和可靠性面向对象的设计方法与传统的的面向过程的方法有本质不同它的基本原理是使用现实世界的概念抽象地思考问题从而自然地解决问题它强调模拟现实世界中的概念而不强调算法它鼓励开发者在软件开发的绝大部分中都用应用领域的概念去思考字符常量是单引号括起来的一个字符例如也可以通过转义序列表示方法表示一些不可显示字符或无法通过键盘输入的字符例如的含义是换行三软件工程基础软件是包括程序数据和相关文档的完整集合分为应用软件和系统软件软件生命周期是指软件产品从提出实现使用维护到停止使用退役的整个过程可分为软件定义软件开发及软件维护个阶段软件危机泛指在计算机软件的开发和维护过程中遇到的一系列严重的问题集中表现在成本质量生产效率等几个方面软件工程是指采用工程的概念原理技术和方法指导软件的开发与维护软件工程的主要思想强调在软件开发过程中需要应用工程化原则软件工程的核心思想是把软件当作一个工程产品来处理软件工程要素方法工具和过程软件工程过程是把软件转化为输出的一组彼此相关的资源活动包含种基本活动软件规格说明软件开发软件确认软件演进软件工程的理论和技术性研究的内容主要包括软件开发技术和软件工程管理软件工程的原则抽象信息隐蔽模块化局部化确定性一致性完备性可验证性需求分析阶段的工作需求获取需求分析编写需求规格说明书需求评审需求分析方法结构化需求分析方法面向数据结构的方法面向数据流的结构化分析方法面向数据结构的结构化数据系统开发方法面向对象需求分析方法静态分析方法动态分析方法结构化方法包括结构化分析方法结构化设计方法结构化编程方法结构化方法中软件功能分解属于总体设计阶段结构化分析的常用工具数据流图是结构化分析方法中用于系统逻辑模型的一种工具它以图形的方式描绘在系统中流动和处理的过程数据流图中四种基本的符号箭头表示数据流数据流是数据在系统中传播的路径圆或椭圆表示加工加工又称为数据处理是对数据流进行某些操作或变换双横表示数据存储数据源数据存储又称为文件指暂时保存的数据它可以是数据库文件或任何形式的数据组织方框数据的源点或终点它是软件系统外部环境中的实体统称外部实体数据字典它是结构分析方法的核心是用来描述系统中所用到的全部数据和文件的文档作用是对中出现的被命名的图形元素进行确切解释数据字典由以下类元素组成数据流数据流分量数据存储处理判定树决策树是一种描述加工的图形工具适合描述时候处理中具有多个判断而且每个决策与若干条件有关判定表与判定树类似也是一种描述加工的图形工具如果一个加工逻辑有多个条件多个操作并且在不同的条件组合下执行不同的操作那么可以使用判定表来描述软件需求规格说明书是需求分析阶段得出的最主要的文档软件需求规格说明书的特点正确性无歧义性完整性可验证性一致性可理解性可修改性和可追踪性软件需求规格说明书的作用便于用户和开发人员进行理解和交流反映出用户问题的结构可以作为软件开发工作的基础和依据作为确认测试和验收的依据软件设计是确定系统的物理模型软件设计是开发阶段最重要的步骤是将需求准确地转化为完整的软件产品或系统的唯一途径从技术观点上看软件设计包括软件结构设计数据设计接口设计过程设计从工程管理角度来看软件设计分两步完成概要设计将软件需求转化为软件体系结构确定系统级接口全局数据结构或数据库模式详细设计确立每个模块的实现算法和局部数据结构用适当方法表示算法和数据结构的细节软件设计的基本原理模块化抽象化信息隐藏和局部化实现信息隐蔽依靠对象的封装模块独立性耦合性和内聚性衡量软件的模块独立性的两个定性的度量标准耦合性是对一个软件结构内不同模块之间互联程度的度量耦合性的强弱取决于模块间接口的复杂程度内聚性是一个模块内部各个元素间彼此结合的紧密程度的度量一个模块的内聚性越强则该模块的模块独立性越强一个模块与其他模块的耦合性越强则该模块的模块独立性越弱在结构程序设计中模块划分的原则是模块内具有高内聚度模块间具有低耦合度耦合度由低到高非直接耦合数据耦合标记耦合控制耦合外部耦合公共耦合内容耦合内聚性由强到弱功能内聚顺序内聚通信内聚过程内聚时间内聚逻辑内聚偶然内聚概要设计的工具结构图也称程序结构图在结构图中矩形表示模块箭头表示模块间的调用关系带注释的箭头表示模块调用过程中来回传递的信息实心圆箭头表示传递控制信息空心圆箭心表示传递数据结构图的基本形式基本形式顺序形式重复形式选择形式结构图有四种模块类型传入模块传出模块变换模块和协调模块任何软件系统都可以用数据流图表示典型的数据流类型有两种变换型和事务型设计的准则提高模块独立性模块规模适中深度宽度扇出和扇入适当如果深度过大则说明有的控制模块可能简单了如果宽度过大则说明系统的控制过于集中扇出过大说明模块过分复杂需要控制和协调过多的下级模块应适当加中间层次扇出过小可以把模块进一步分解成若干小模块或合并到上级模块中扇入越大则共享该模块的上级数目越多好的软件设计结构通常顶层高扇出中间扇出较少底层高扇入使模块的作用域在该模块的控制域内减少模块的接口和界面的复杂性设计成单入口单出口的模块设计功能可预测的模块详细设计常用的设计工具工程设计工具图形工具表格工具和语言工具图形工具程序流程图箭头表示控制流方框表示加工步骤菱形表示逻辑条件图盒图有五种基本图形图问题分析图有五种基本图型表格工具判定表语言工具过程设计语言结构化的英语和伪码软件测试的目标发现程序中的错误软件测试方法静态测试和动态测试静态测试包括代码检查静态结构分析代码质量度量不实际运行软件主要通过人工进行动态测试通过运行软件来检验软件中的动态行为和运行结果的正确性白盒测试和黑盒测试白盒测试也称为结构测试或逻辑测试是把程序看成装在一只透明的白盒子里测试者完全了解程序的结构和处理过程它根据程序的内部逻辑来设计测试用例检查程序中的逻辑通路是否都按预定的要求正确地工作白盒测试的方法逻辑覆盖基本路经测试黑盒测试也称功能测试或数据驱动测试是把程序看成一只黑盒子测试者完全不了解或不考虑程序的结构和处理过程它根据规格说明书的功能来设计测试用例检查程序的功能是否符合规格说明的要求黑盒测试的方法等价划分法边界值分析法错误推测法软件测试过程分个步骤即单元测试集成测试验收测试确认测试系统测试确认测试检查软件产品是否符合需求定义程序调试是诊断而非发现和改正程序中的错误主要的调试方法有强行排错法回溯法原因排除法包括演绎法归纳法和二分法结构化分析属于需求分析方法的常用工具数据流图数据字典判定树判定表概要设计开发阶段的常用工具系统结构图详细设计开发阶段的常用工具程序流程图图盒图图图软件生命周期数据流图种基本符合数据流图数据字典中的符号数据字典示例判定表示例判定树示例程序结构图的基本图符程序结构图中的专业术语图示例四数据库设计基础数据是数据库存储的基本对象是描述事物的符号记录数据库是长期储存在计算机内有组织的可共享的大量数据的集合它具有统一的结构形式并存放于统一的存储介质内是多种应用数据的集成并可被各个应用程序所共享所以数据库技术的根本目标是解决数据共享问题数据库管理系统是数据库的管理机构负责数据库中的数据组织数据操纵数据维护控制及保护和数据服务等数据库管理系统是数据库系统的核心数据库系统包含数据库和数据库管理系统数据库管理系统提供相应的数据语言数据定义语言负责数据模式定义和数据物理存取构建数据操纵语言负责数据的操纵数据控制语言负责数据完整性安全性的定义与检查以及并发控制故障恢复等功能数据库系统是指在计算机系统中引入数据库后的系统一般由数据库数据库管理系统应用系统数据库管理员和用户构成文件系统阶段的缺陷数据冗余不一致性数据联系弱数据库系统的基本特点数据的高集成性数据的高共享性和低冗余性数据高独立性数据统一管理与控制数据独立性是数据与程序间的互不依赖性即数据库中的数据独立于应用程序而不依赖于应用程序数据的独立性一般分为物理独立性与逻辑独立性两种物理独立性当数据的物理结构包括存储结构存取方式等改变时其逻辑结构应用程序都不用改变逻辑独立性数据的逻辑结构改变了如修改数据模式增加新的数据类型改变数据间联系等用户的应用程序可以不变数据库系统的三级模式外模式外模式也称子模式它是数据库用户能够看见和使用的局部数据的逻辑结构和特征的描述一个概念模式可以有若干个外模式概念模式也称逻辑模式是对数据库系统中全局数据逻辑结构的描述是全体用户公共数据视图一个数据库只有一个概念模式内模式内模式又称物理模式它给出了数据库物理存储结构与物理存取方法一个数据库只有一个内模式内模式处于最底层它反映了数据在计算机物理结构中的实际存储形式概念模式处于中间层它反映了设计者的数据全局逻辑要求而外模式处于最外层它反映了用户对数据的要求两级映射保证了数据库系统中数据的独立性模型实体的表示用矩形表示实体集在矩形内写上该实体集的名字属性的表示用椭圆形表示属性在椭圆形内写上该属性的名称联系的表示用菱形表示联系菱形内写上联系名关系模式采用二维表来表示数据模式由关系数据结构关系操纵和关系完整性约束部分组成在关系数据库中用来表示实体间联系的是关系在二维表中惟一标识元组的最小属性值称为该表的键或码三类数据约束它们是实体完整性约束参照完整性约束以及用户定义的完整性约束其中实体完整性约束参照完整性约束必须满足的完整性约束条件参照完整性约束不允许关系应用不存在的元组实体完整性约束要求关系的主键中属性值不能为空这是数据库完整性的最基本要求投影一元运算对一个关系进行垂直切割消去某些列除给定关系和其中是属性组中的和中可以有不同的属性名但必须出自相同的域集自然连接满足的条件是两关系间有公共域通过公共域的相等值进行连接数据库设计面向数据的方法是以信息需求为主兼顾处理需求面向过程的方法是以处理需求为主兼顾信息需求由于数据在系统中稳定性高数据已成为系统的核心故面向数据的设计方法已成为主流数据库设计生命周期需求分析阶段概念设计阶段逻辑设计阶段物理设计阶段规范化一个低一级范式的关系模式通过模式分解转化为若干个高一级范式的关系模式的集合概念结构设计是将需求分析阶段得到的用户需求抽象为信息结构即概念模型的过程它是整个数据库设计的关键逻辑结构设计的任务是将图转换成关系数据模型的过程常用的存取方法索引方法聚簇方法和方法数据库概念设计的过程中视图设计一般有三种设计次序自顶向下这种方法是先从抽象级别高且普遍性强的对象开始逐步细化具体化与特殊化由底向上这种设计方法是先从具体的对象开始逐步抽象普遍化与一般化最后形成一个完整的视图设计由内向外这种设计方法是先从最基本与最明显的对象着手逐步扩充至非基本不明显的其它对象分布式数据库系统具有数据分布性逻辑整体性位置透明性和复制透明性的特点来源',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-01-22 11:53:04',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Jayfar</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 资源</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/tags/Self-investment/"><i class="anzhiyufont anzhiyu-icon-anzhiyu faa-tada" style="font-size: 0.9em;"></i><span> 提升</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 书架</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"></div><div class="nav-button only-home" id="travellings_button" title="随机前往一个文章"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button only-home" id="travellings_button" title="搜索"><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div></div><div class="nav-button only-home" id="travellings_button" title="中控台"><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label></div><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://img.wjwj.top/2025/01/21/2e5add80fb097756ec66f4fe3a8c8318.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://img.wjwj.top/2025/01/21/2e5add80fb097756ec66f4fe3a8c8318.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://img.wjwj.top/2025/01/21/f1b0b2d68d1c80ef1a19ebdb218a0b1a.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://img.wjwj.top/2025/01/21/f1b0b2d68d1c80ef1a19ebdb218a0b1a.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1.05rem;">C语言<sup>7</sup></a><a href="/tags/English/" style="font-size: 1.05rem;">English<sup>1</sup></a><a href="/tags/GUI/" style="font-size: 1.05rem;">GUI<sup>1</sup></a><a href="/tags/Html/" style="font-size: 1.05rem;">Html<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>36</sup></a><a href="/tags/JavaScript/" style="font-size: 1.05rem;">JavaScript<sup>1</sup></a><a href="/tags/LeetCode/" style="font-size: 1.05rem;">LeetCode<sup>2</sup></a><a href="/tags/Linux/" style="font-size: 1.05rem;">Linux<sup>1</sup></a><a href="/tags/MySql/" style="font-size: 1.05rem;">MySql<sup>1</sup></a><a href="/tags/Self-investment/" style="font-size: 1.05rem;">Self-investment<sup>1</sup></a><a href="/tags/Web%E5%89%8D%E7%AB%AF/" style="font-size: 1.05rem;">Web前端<sup>1</sup></a><a href="/tags/WechatApplet/" style="font-size: 1.05rem;">WechatApplet<sup>1</sup></a><a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.05rem;">多线程<sup>11</sup></a><a href="/tags/%E6%8C%87%E9%92%88/" style="font-size: 1.05rem;">指针<sup>2</sup></a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 1.05rem;">数据结构与算法<sup>10</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" style="font-size: 1.05rem;">网络安全<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" style="font-size: 1.05rem;">网络编程<sup>2</sup></a><a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 1.05rem;">虚拟机<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/" style="font-size: 1.05rem;">计算机理论<sup>3</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">36</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">20</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/" itemprop="url">计算机理论</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>计算机理论</span></a></span></div></div><h1 class="post-title" itemprop="name headline">公共基础知识[计算机理论]</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2020-03-11T11:17:48.000Z" title="发表于 2020-03-11 19:17:48">2020-03-11</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-01-22T03:53:04.471Z" title="更新于 2025-01-22 11:53:04">2025-01-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">6.7k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为南京"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>南京</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src=""></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/"><header><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/" itemprop="url">计算机理论</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/" tabindex="-1" itemprop="url">计算机理论</a><h1 id="CrawlerTitle" itemprop="name headline">公共基础知识[计算机理论]</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">Jayfar</span><time itemprop="dateCreated datePublished" datetime="2020-03-11T11:17:48.000Z" title="发表于 2020-03-11 19:17:48">2020-03-11</time><time itemprop="dateCreated datePublished" datetime="2025-01-22T03:53:04.471Z" title="更新于 2025-01-22 11:53:04">2025-01-22</time></header><p>计算机系统公共基础知识</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="一、数据结构与算法"><a href="#一、数据结构与算法" class="headerlink" title="一、数据结构与算法"></a>一、数据结构与算法</h2><ol>
+<li>算法的基本运算和操作：算术运算，逻辑运算，<strong>关系运算</strong>，<strong>数据传输</strong>。</li>
+<li>算法基本设计方法：列举法、归纳法、递推、递归、减半递推技术。</li>
+<li><strong>数据元素</strong>：数据元素是<strong>数据的基本单位</strong>。</li>
+<li><strong>数据对象</strong>：数据对象是<strong>性质相同的数据元素的集合</strong>。</li>
+<li><strong>数据结构</strong>：是指由某一<strong>数据对象中所有数据成员之间的关系组成的集合</strong>。</li>
+<li>数据的逻辑结构包括数据对象和数据对象之间的关系。</li>
+<li>数据的存储结构包括数据元素的存储方式和关系的存储方式。</li>
+<li><strong>一种数据的逻辑结构</strong>可以表示成<strong>多种存储结构。</strong></li>
+<li><strong>线性结构</strong>的条件（一个非空数据结构)：<br>（1）有且只有一个根结点；<br>（2）每一个结点最多有一个前件，也最多有一个后件。</li>
+<li>栈、队列、<strong>双向链表</strong>是线性结构；树、二叉树为非线性结构。</li>
+<li><strong>线性表</strong>是由一组数据元素构成，数据元素的位置只取决于自己的序号，元素之间的相对位置是线性的。具有“<strong>一对一</strong>”逻辑关系的数据，最佳的存储方式是使用线性表。除根结点与终端结点外，其他所有结点有且只有一个前件，也有且只有一个后件。</li>
+<li>线性表的存储结构：<strong>顺序存储结构（</strong>顺序表，图3a)）和<strong>链式存储结构（</strong>链表，图3b)）。</li>
+<li><strong>线性表的顺序存储结构</strong>有两个特点：<br>（1）线性表中所有元素所占的存储空间连续；<br>（2）线性表中各数据元素在存储空间中是按逻辑顺序依次存放的。</li>
+<li>线性表的链式存储结构存储数据结构的存储空间可以不连续，各数据结点的存储顺序与数据元素之间的逻辑关系可以不一致。结点包含：<strong>数据域</strong>、<strong>指针域</strong>。（注：链式存储方式既可用于表示线性结构，也可用于表示非线性结构）。</li>
+<li><strong>栈</strong>和<strong>队列</strong>隶属于线性表，是特殊的线性表，因为它们对线性表中元素的进出做了明确的要求。</li>
+<li><strong>栈</strong>具有<strong>记忆功能</strong>，队列没有记忆功能。栈的特点是先进后出,后进先出,所以对一个栈进行出栈操作,出来的元素肯定是最后存入栈中的元素,所以栈有记忆功能。而队列是先进先出,取队列的第一个元素,得到的是最先存入队列的元素,而不是上一个存入队列的元素,所以没有记忆功能。</li>
+<li>栈、队列的存储结构：<br>（1）顺序存储结构：用一组地址连续的存储单元即一维数组来存储；<br>（2）链式存储：线性链表。</li>
+<li>计算循环队列的元素个数：“尾指针减头指针”，若为负数，再加其容量即可。</li>
+<li>树是 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=n(n%3E0)" alt="[公式]"> 个结点的有限集合，是一种非线性结构。</li>
+<li>结点的度：结点所拥有的子树的个数。</li>
+<li><strong>叶子结点</strong>：<strong>度为0</strong>的结点。</li>
+<li>分支结点：除叶子结点以外的结点。</li>
+<li>结点的层次：<strong>根结点在第一层</strong>。</li>
+<li>树的深度：所处层次最大的那个结点的层次。</li>
+<li><strong>树的度</strong>：树中<strong>所有结点的度的最大值</strong>。</li>
+<li>二叉树每个结点最多只有两棵子树，且有左右之分，不能互换，二叉树有<strong>五种不同的形态</strong>。</li>
+<li>在二叉树的第 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=k" alt="[公式]"> 层上，最多有 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=2%5E%7Bk-1%7D(k%5Cgeq1)" alt="[公式]"> 个结点。</li>
+<li>深度为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=m" alt="[公式]"> 的二叉树最多有 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=2%5E%7Bm%7D-1" alt="[公式]"> 个结点。</li>
+<li><strong>在任意一棵二叉树中，度为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=0" alt="[公式]"> 的结点（叶子结点）总是比度为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=2" alt="[公式]"> 的结点多一个。</strong></li>
+<li>具有 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=n" alt="[公式]"> 个结点的二叉树，其深度不小于 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cleft%5B+log_%7B2%7Dn%5Cright%5D+1" alt="[公式]"> ，其中 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cleft%5B+log_%7B2%7Dn%5Cright%5D" alt="[公式]"> 表示为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=+log_%7B2%7Dn" alt="[公式]"> 的整数部分。</li>
+<li><strong>满二叉树</strong>：每一层上的结点数都达到最大值，即在满二叉树的第 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=k" alt="[公式]"> 层上有 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=2%5E%7Bk-1%7D" alt="[公式]"> 个结点。</li>
+<li><strong>完全二叉树</strong>：除最后一层外，每一层上的结点数均达到最大值；在最后一层上只缺少右边的若干结点。</li>
+<li>具有 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=n" alt="[公式]"> 个结点的完全二叉树的深度为<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cleft%5B+log_%7B2%7Dn%5Cright%5D+1" alt="[公式]"> 。</li>
+<li>完全二叉树中度为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=1" alt="[公式]"> 的结点数为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=0" alt="[公式]"> 或 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=1" alt="[公式]"> 。</li>
+<li><strong>前序遍历</strong>：<strong>先访问根结点</strong>、然后遍历左子树，最后遍历右子树；并且，在遍历左、右子树时，仍然先访问根结点，然后遍历左子树，最后遍历右子树。</li>
+<li><strong>中序遍历</strong>：先遍历左子树、<strong>然后访问根结点</strong>，最后遍历右子树；并且，在遍历左、右子树时，仍然先遍历左子树，然后访问根结点，最后遍历右子树。</li>
+<li><strong>后序遍历</strong>：先遍历左子树、然后遍历右子树，<strong>最后访问根结点</strong>；并且，在遍历左、右子树时，仍然先遍历左子树，然后遍历右子树，最后访问根结点。</li>
+<li><strong>顺序查找</strong>是从表的一端开始，依次扫描表中的各个元素，并与所要查找的数进行比较。</li>
+<li>只能采用顺序查找：<br>（1）线性表为无序表，则不管是顺序存储结构还是链式存储结构，只能用顺序查找。（2）有序线性表，如果采用链式存储结构，也只能用顺序查找。</li>
+<li><strong>二分查找</strong>的条件：<br>（1）用<strong>顺序存储结构</strong>，<br>（2）线性表是<strong>有序表</strong>。</li>
+<li>对于长度为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=n" alt="[公式]"> 的有序线性表，在最坏情况下，二分法查找只需比较 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=log_%7B2%7Dn" alt="[公式]"> 次，而顺序查找需要比较 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=n" alt="[公式]"> 次。</li>
+<li><strong>排序算法</strong><br>1、<strong>交换类排序</strong><br>（1）冒泡排序法，在最坏的情况下，冒泡排序需要比较次数为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cfrac%7Bn(n-1)%7D%7B2%7D" alt="[公式]"> 。<br>（2）<strong>快速排序</strong>法 ，在最坏的情况下，快速排序需要比较次数为 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cfrac%7Bn(n-1)%7D%7B2%7D" alt="[公式]"> 。<br>2、<strong>插入类排序</strong>：<br>（1）简单插入排序法，最坏情况需要 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cfrac%7Bn(n-1)%7D%7B2%7D" alt="[公式]"> 次比较；<br>（2）<strong>希尔排序</strong>法，最坏情况需要 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=O(n%5E%7B1.5%7D)" alt="[公式]"> 次比较。<br>3、<strong>选择类排序</strong>：<br>（1）简单选择排序法，最坏情况需要 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=%5Cfrac%7Bn(n-1)%7D%7B2%7D" alt="[公式]"> 次比较；<br>（2）<strong>堆排序法</strong>，最坏情况需要 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.zhihu.com/equation?tex=O(nlog_%7B2%7Dn)" alt="[公式]"> 次比较。 相比以上几种(除希尔排序法外)，堆排序法的时间复杂度最小。</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.zhimg.com/80/v2-35d516d0e656d043c06c44453e0e08ac_720w.jpg" alt="img">来源：<a target="_blank" rel="noopener" href="http://data.biancheng.net/view/157.html">http://data.biancheng.net/view/157.html</a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic3.zhimg.com/80/v2-d5e3ee1ac10fca6e52a36f0965d973da_720w.jpg" alt="img">A结点的度为3，B结点的度为2，C结点的度为1，D结点的度为3，E、F、G、H、I 以及J度都为0，称为叶子结点.</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-c7318bdcd4862289abf9e4f81d3a4607_720w.jpg" alt="img"><a target="_blank" rel="noopener" href="https://blog.csdn.net/u010104750/article/details/49515553">https://blog.csdn.net/u010104750/article/details/49515553</a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic3.zhimg.com/80/v2-8eaacbc2a78b591d91dca870273ab412_720w.jpg" alt="img"></p>
+<hr>
+<h2 id="二、程序设计基础"><a href="#二、程序设计基础" class="headerlink" title="二、程序设计基础"></a>二、程序设计基础</h2><ol>
+<li>形成良好的程序设计风格需注意：<br>①源程序文档化；<br>②数据说明的方法；<br>③语句的结构；<br>④输入和输出。<br>⑤模块设计要保证低耦合、高内聚。<br>(内聚：每个模块尽可能独立完成自己的功能，不依赖于模块外部的代码。<br>耦合：模块与模块之间接口的复杂程度，模块之间联系越复杂耦合度越高，牵一发而动全身。)</li>
+<li>结构化程序设计方法的四条原则：<br>①自顶向下；<br>②逐步求精；<br>③模块化；<br>④限制使用goto语句。</li>
+<li>两类循环语句：先判断后执行的循环体称为<strong>当型循环</strong>结构；先执行循环体后判断的称为<strong>直到型循环</strong>结构。</li>
+<li>面向对象的程序设计以对象为核心，强调对象的<strong>抽象性</strong>，<strong>封装性</strong>，<strong>继承性</strong>、<strong>多态性</strong>、（依赖性）。</li>
+<li>对象的基本特点：<br>（1）标识惟一性；<br>（2）分类性；<br>（3）多态性；<br>（4）封装性；<br>（5）模块独立性好。</li>
+<li><strong>属性</strong>：即对象所包含的信息，它在设计对象时确定，一般只能通过执行对象的操作来改变。<strong>类</strong>：是具有相似属性与操作的一组对象。类是关于对象性质的描述。类是对象的抽象，对象是其对应类的一个实例。</li>
+<li><strong>消息</strong>：是一个实例与另一个实例之间传递的信息。对象间的通信靠消息传递。它请求对象执行某一处理或回答某一要求的信息，它统一了数据流和控制流。消息的<strong>组成</strong>包括：<br>（1）接收消息的对象的名称；<br>（2）消息标识符，也称消息名；<br>（3）零个或多个参数。</li>
+<li><strong>多态性</strong>：是指同样的消息被不同的对象接受时可导致完全不同的行动的现象。</li>
+<li>在<strong>软件设计</strong>过程中，必须遵循软件工程的基本原则：这些原则包括<strong>抽象</strong>、<strong>信息隐蔽</strong>、<strong>模块化</strong>、<strong>局部化</strong>、<strong>确定性</strong>、<strong>一致性</strong>、<strong>完备性</strong>和<strong>可靠性</strong>。</li>
+<li><strong>面向对象</strong>的设计方法与传统的的面向过程的方法有本质不同，它的<strong>基本原理是，使用现实世界的概念抽象地思考问题从而自然地解决问题。</strong>它强调模拟现实世界中的概念而不强调算法，它鼓励开发者在软件开发的绝大部分中都用应用领域的概念去思考。</li>
+<li>字符常量是单引号括起来的一个字符，例如’a’，也可以通过转义序列表示方法表示一些不可显示字符或无法通过键盘输入的字符，例如’\n’的含义是换行。</li>
+</ol>
+<hr>
+<h2 id="三、软件工程基础"><a href="#三、软件工程基础" class="headerlink" title="三、软件工程基础"></a><strong>三、软件工程基础</strong></h2><ol>
+<li><p><strong>软件</strong>是包括<strong>程序</strong>、<strong>数据</strong>和<strong>相关文档</strong>的完整集合。分为应用软件和系统软件。</p>
+</li>
+<li><p><strong>软件生命周期</strong>是指软件产品从提出、实现、使用维护到停止使用退役的整个过程。可分为软件定义，软件开发及软件维护3个阶段。</p>
+</li>
+<li><p><strong>软件危机</strong>泛指在计算机软件的开发和维护过程中遇到的一系列严重的问题，集中表现在成本、质量、生产效率等几个方面。</p>
+</li>
+<li><p><strong>软件工程</strong>是指采用工程的概念、原理、技术和方法指导软件的开发与维护。软件工程的主要思想强调在软件开发过程中需要应用工程化原则。软件工程的核心思想是把软件当作一个工程产品来处理。</p>
+</li>
+<li><p><strong>软件工程3要素</strong>：方法，工具和过程。</p>
+</li>
+<li><p><strong>软件工程过程</strong>是把软件转化为输出的一组彼此相关的资源活动，包含4种基本活动：<br>（1）<strong>P</strong>(plan)—软件规格说明；<br>（2）<strong>D</strong>(do)—软件开发；<br>（3）<strong>C</strong>(check)—软件确认；<br>（4）<strong>A</strong>(action)—软件演进。</p>
+</li>
+<li><p>软件工程的理论和技术性研究的内容主要包括<strong>软件开发技术</strong>和<strong>软件工程管理</strong>。</p>
+</li>
+<li><p><strong>软件工程的原则</strong>：抽象，信息隐蔽，模块化，局部化，确定性，一致性，完备性，可验证性。</p>
+</li>
+<li><p>需求分析阶段的工作：需求获取，需求分析，编写需求规格说明书，需求评审。</p>
+</li>
+<li><p><strong>需求分析方法</strong>：<br>（1）<strong>结构化需求分析</strong>方法：<br>①面向数据结构的Jackson方法（JSD）；<br>②面向数据流的结构化分析方法（SA）；<br>③面向数据结构的结构化数据系统开发方法（DSSD）；<br>（2）<strong>面向对象需求分析</strong>方法（OOA）：<br>①静态分析方法<br>②动态分析 方法。</p>
+</li>
+<li><p>结构化方法包括结构化分析方法，结构化设计方法，结构化编程方法。结构化方法中，<strong>软件功能分解</strong>属于<strong>总体设计</strong>阶段。</p>
+</li>
+<li><p><strong>结构化分析</strong>的<strong>常用工具</strong>： <strong>（1）数据流图</strong>（<strong>DFD</strong>-Data Flow Diagram）：<br>是结构化分析方法中用于系统逻辑模型的一种工具。它以图形的方式描绘在系统中流动和处理的过程。数据流图中四种基本的符号：<br><strong>①【箭头】</strong>：表示【<strong>数据流】</strong>，数据流是数据在系统中传播的路径。 <strong>②圆或椭圆</strong>：表示加工，加工又称为数据处理，是对数据流进行某些操作或变换。<br><strong>③双横</strong>：表示数据存储（数据源）。数据存储又称为文件，指暂时保存的数据，它可以是数据库文件或任何形式的数据组织。<br><strong>④方框</strong>：数据的源点或终点。它是软件系统外部环境中的实体，统称外部实体。</p>
+<p><strong>（2）数据字典（DD）</strong>：<br>它是结构分析方法的<strong>核心</strong>，是用来描述系统中所用到的全部数据和文件的文档,作用是对DFD中出现的被命名的图形元素进行确切解释。<br>数据字典由以下4类元素组成：<br><strong>①数据流</strong><br><strong>②数据流分量</strong><br><strong>③数据存储</strong><br><strong>④处理</strong></p>
+<p><strong>（3）判定树（决策树）</strong>：<br>是一种<strong>描述加工</strong>的图形工具，适合描述时候处理中具有多个判断，而且每个决策与若干条件有关。</p>
+<p><strong>（4）判定表</strong>：<br>与判定树类似，也是一种<strong>描述加工</strong>的图形工具。如果一个加工逻辑有多个条件、多个操作，并且在不同的条件组合下执行不同的操作，那么可以使用判定表来描述。</p>
+</li>
+<li><p><strong>软件需求规格说明书</strong>（<strong>SRS</strong>，Software Requirement Specification）是需求分析阶段得出的最主要的文档。软件需求规格说明书的特点：正确性、<strong>无歧义性</strong>、完整性、可验证性、一致性、可理解性、可修改性和可追踪性。<br>软件需求规格说明书的<strong>作用</strong>：<br>①<strong>便于用户和开发人员进行理解和交流</strong>。<br>②反映出用户问题的结构，可以作为软件开发工作的基础和依据。<br>③作为确认测试和验收的依据。</p>
+</li>
+<li><p><strong>软件设计</strong>是确定系统的物理模型。软件设计是开发阶段最重要的步骤，是将需求准确地转化为完整的软件产品或系统的唯一途径。<br>从技术观点上看，软件设计包括软件结构设计、数据设计、接口设计、过程设计。<br>从工程管理角度来看，软件设计分两步完成：<br>（1）<strong>概要设计</strong>将软件需求转化为软件体系结构、确定系统级接口、全局数据结构或数据库模式；<br>（2）<strong>详细设计</strong>确立每个模块的实现算法和局部数据结构，用适当方法表示算法和数据结构的细节。</p>
+</li>
+<li><p><strong>软件设计的基本原理</strong> ：<br>模块化、抽象化、信息隐藏和局部化（实现信息隐蔽依靠对象的封装）、模块独立性。</p>
+</li>
+<li><p><strong>耦合性</strong>和<strong>内聚性</strong><br>衡量软件的模块独立性的两个定性的度量标准。<br><strong>耦合性</strong>：是对一个软件结构内不同模块之间互联程度的度量。耦合性的强弱取决于模块间接口的复杂程度。<br><strong>内聚性</strong>：是一个模块内部各个元素间彼此结合的紧密程度的度量。<br>一个模块的内聚性越强则该模块的模块独立性越强。一个模块与其他模块的耦合性越强则该模块的模块独立性越弱。<br>在结构程序设计中，模块划分的<strong>原则</strong>是模块内具有<strong>高内聚</strong>度，模块间具有<strong>低耦合</strong>度。<br>耦合度由低到高：<strong>非直接耦合</strong>，数据耦合，标记耦合，控制耦合，外部耦合，公共耦合，内容耦合。<br>内聚性由强到弱：<strong>功能内聚</strong>，顺序内聚，通信内聚，过程内聚，时间内聚，逻辑内聚，偶然内聚。</p>
+</li>
+<li><p><strong>概要设计</strong>的<strong>工具</strong>：<strong>结构图</strong>（<strong>SC</strong>-Structure Chart）也称<strong>程序结构图。</strong><br>在结构图中：<br><strong>矩形</strong>表示模块；<br>【<strong>箭头</strong>表示<strong>模块间的调用关系】</strong>；<br>带注释的箭头表示模块调用过程中来回传递的信息；<br><strong>实心圆箭头</strong>表示传递<strong>控制</strong>信息;<br>空心<strong>圆箭心</strong>表示传递数据。</p>
+<p>结构图的基本形式：基本形式、顺序形式、重复形式、选择形式。<br>结构图有四种模块类型：传入模块、传出模块、变换模块和协调模块。</p>
+</li>
+<li><p>任何软件系统都可以用数据流图表示，典型的<strong>数据流类型</strong>有两种：<strong>变换型</strong>和<strong>事务型</strong>。</p>
+</li>
+<li><p><strong>设计的准则</strong><br>（1）提高模块独立性。<br>（2）模块规模适中。<br>（3）深度，宽度，扇出和扇入适当。<br>如果深度过大，则说明有的控制模块可能简单了，如果宽度过大，则说明系统的控制过于集中，扇出过大说明模块过分复杂，需要控制和协调过多的下级模块，应适当加中间层次，扇出过小可以把模块进一步分解成若干小模块，或合并到上级模块中，扇入越大则共享该模块的上级数目越多。好的软件设计结构通常<strong>顶层高扇出，中间扇出较少，底层高扇入。</strong><br>（4）使模块的作用域在该模块的控制域内。<br>（5）减少模块的接口和界面的复杂性。<br>（6）设计成单入口，单出口的模块。<br>（7）设计功能可预测的模块。</p>
+</li>
+<li><p><strong>详细设计</strong>常用的设计<strong>工具</strong>（工程设计工具）：图形工具，表格工具和语言工具。<br>图形工具：<br><strong>程序流程图</strong>：【<strong>箭头</strong>表示<strong>控制流】</strong>，方框表示加工步骤，菱形表示逻辑条件。<br><strong>N-S图</strong>（盒图）：有五种基本图形。<br><strong>PAD</strong>图（Problem Analysis Diagram）：问题分析图，有五种基本图型。<br>表格工具：判定表。<br>语言工具：PDL—过程设计语言（结构化的英语和伪码）。</p>
+</li>
+<li><p><strong>软件测试</strong>的目标：<strong>发现</strong>程序中的错误。</p>
+</li>
+<li><p><strong>软件测试方法</strong><br>1、静态测试和动态测试<br>①<strong>静态测试</strong><br>包括代码检查、静态结构分析、代码质量度量。<strong>不实际运行软件</strong>，主要通过人工进行。<br>②<strong>动态测试</strong><br>通过<strong>运行软件</strong>来检验软件中的动态行为和运行结果的正确性。<br>2、白盒测试和黑盒测试<br>①<strong>白盒测试</strong><br>也称为结构测试或逻辑测试，是把程序看成装在一只透明的白盒子里，测试者完全了解程序的结构和处理过程。它根据程序的内部逻辑来设计测试用例，检查程序中的逻辑通路是否都按预定的要求正确地工作。<br>白盒测试的方法：逻辑覆盖，基本路经测试。<br>②<strong>黑盒测试</strong><br>也称功能测试或数据驱动测试，是把程序看成一只黑盒子，测试者完全不了解，或不考虑程序的结构和处理过程。它根据规格说明书的功能来设计测试用例，检查程序的功能是否符合规格说明的要求。<br>黑盒测试的方法：等价划分法，边界值分析法，错误推测法。</p>
+</li>
+<li><p>软件测试过程分4个步骤，即<strong>单元测试—&gt;集成测试</strong>—&gt;<strong>验收测试（确认测试）</strong>—&gt;<strong>系统测试</strong>。<br><strong>确认测试：检查软件产品是否符合需求定义。</strong></p>
+</li>
+<li><p><strong>程序调试</strong>是<strong>诊断（而非发现）</strong>和<strong>改正</strong>程序中的错误。</p>
+</li>
+<li><p>主要的调试方法有：<br>（1）强行排错法； （2）回溯法； （3）原因排除法，包括演绎法，归纳法和二分法。</p>
+</li>
+<li><p><strong>结构化分析（属于需求分析方法）</strong>的常用工具：<br>①数据流图（DFD）<br>②数据字典（DD）<br>③判定树<br>④判定表<br><strong>概要设计（开发阶段）</strong>的常用工具：<br>①系统结构图<br><strong>详细设计（开发阶段）</strong>的常用工具：<br>①程序流程图<br>②N-S图（盒图）<br>③PAD图<br>④HIPO图</p>
+</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic2.zhimg.com/80/v2-a774042f558b3899ecec7cb7d0144435_720w.png" alt="img">软件生命周期</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic2.zhimg.com/80/v2-b8b5a6f79d0ce7c3499a0581e2718df9_720w.jpg" alt="img">数据流图4种基本符合</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-48fdb7ec2cc5ae38719ffefbc3506a6b_720w.jpg" alt="img">数据流图</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic2.zhimg.com/80/v2-95c96ac9127f1ea5f03ab07bd8fd224d_720w.jpg" alt="img">数据字典中的符号</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.zhimg.com/80/v2-4daa643f7dbc61eb23ad4f60f213a620_720w.jpg" alt="img">数据字典示例</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-3db4748fa001a2a60c19da9e15afe5eb_720w.jpg" alt="img">判定表示例</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-6dff453e97f1b3406a23d69ece084ca7_720w.jpg" alt="img">判定树示例</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.zhimg.com/80/v2-fe2d5bb32a989f100f47ada6886f7454_720w.jpg" alt="img">程序结构图的基本图符</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-afee935aa1444dc335c7d6c1ce4b2403_720w.jpg" alt="img">程序结构图中的专业术语</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic3.zhimg.com/80/v2-b53f5b0b391f989a856e9d8fd4213256_720w.jpg" alt="img"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic3.zhimg.com/80/v2-6a4b6c21b5ddb55d4a22dc28f3c84022_720w.jpg" alt="img"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-e1b00b60e322f4aa15a585facd5a0433_720w.jpg" alt="img">N-S图示例</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic3.zhimg.com/80/v2-3e732058dc21f3d1bf863f52281e4812_720w.jpg" alt="img"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-ee793c1354a2af4e4a54d4ab8f7a9e5b_720w.jpg" alt="img"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic4.zhimg.com/80/v2-948dbadc1d0e72e240f98fed2dd6753b_720w.jpg" alt="img"></p>
+<p>—————————–2020-1-6——————————-</p>
+<hr>
+<h2 id="四、数据库设计基础"><a href="#四、数据库设计基础" class="headerlink" title="四、数据库设计基础"></a>四、数据库设计基础</h2><ol>
+<li><strong>数据（Data）</strong>是数据库存储的基本对象，是描述事物的符号记录。</li>
+<li><strong>数据库（DB）</strong>是长期储存在计算机内、有组织的、可共享的大量数据的集合。<br>它具有统一的结构形式并存放于统一的存储介质内，是多种应用数据的集成，并可被各个应用程序所共享，所以数据库技术的根本目标是解决数据共享问题。</li>
+<li><strong>数据库管理系统（DBMS）</strong>是数据库的管理机构，负责数据库中的数据组织、数据操纵、数据维护、控制及保护和数据服务等。数据库管理系统是数据库系统的<strong>核心</strong>。<strong>数据库系统</strong>包含<strong>数据库</strong>和<strong>数据库管理系统</strong>。<br>数据库管理系统提供相应的数据语言：<br>数据<strong>定义</strong>语言（D<strong>D</strong>L）：负责数据模式定义和数据物理存取构建。<br>数据<strong>操纵</strong>语言（D<strong>M</strong>L）：负责数据的操纵。<br>数据<strong>控制</strong>语言（D<strong>C</strong>L）：负责数据完整性，安全性的定义与检查以及并发控制，故障恢复等功能。</li>
+<li><strong>数据库系统（DBS）</strong>是指在计算机系统中引入数据库后的系统，一般由数据库、数据库管理系统、应用系统、数据库管理员和用户构成。</li>
+<li>文件系统阶段的缺陷：<br>（1）数据冗余<br>（2）不一致性<br>（3）数据联系弱。</li>
+<li>数据库系统的基本特点：<br>（1）数据的高集成性<br>（2）数据的高共享性和低冗余性<br>（3）数据高独立性<br>（4）数据统一管理与控制。</li>
+<li><strong>数据独立性</strong>是<strong>数据与程序间的互不依赖性</strong>，即数据库中的数据独立于应用程序而不依赖于应用程序。 数据的独立性一般分为物理独立性与逻辑独立性两种。<br>（1）<strong>物理独立性</strong>：<br>当数据的物理结构（包括存储结构、存取方式等）改变时，其逻辑结构，应用程序都不用改变。<br>（2）<strong>逻辑独立性</strong>：<br>数据的逻辑结构改变了，如修改数据模式、增加新的数据类型、改变数据间联系等，用户的应用程序可以不变。<br>—————————–2020-1-7——————————-</li>
+<li>数据库系统的三级模式<br>（1）<strong>外模式</strong>，外模式也称子模式，它是数据库用户能够看见和使用的局部数据的逻辑结构和特征的描述，一个概念模式可以有若干个外模式。<br>（2）<strong>概念模式</strong>，也称逻辑模式，是对数据库系统中全局数据逻辑结构的描述，是全体用户公共数据视图。一个数据库只有一个概念模式。<br>（3）<strong>内模式</strong>，内模式又称物理模式，它给出了数据库物理存储结构与物理存取方法。一个数据库只有一个内模式。<br>内模式处于最底层，它反映了数据在计算机物理结构中的实际存储形式，概念模式处于中间层，它反映了设计者的数据全局逻辑要求，而外模式处于最外层，它反映了用户对数据的要求。</li>
+<li>两级映射保证了数据库系统中数据的独立性。</li>
+<li>E-R模型<br>（1）<strong>实体</strong>的表示：用<strong>矩形</strong>表示实体集，在矩形内写上该实体集的名字。<br>（2）<strong>属性</strong>的表示：用<strong>椭圆</strong>形表示属性，在椭圆形内写上该属性的名称。<br>（3）<strong>联系</strong>的表示：用<strong>菱形</strong>表示联系，菱形内写上联系名。</li>
+<li>关系模式采用二维表来表示，(数据模式）由关系<strong>数据结构</strong>，关系<strong>操纵</strong>和关系<strong>完整性约束</strong>3部分组成，在关系数据库中，用来表示实体间联系的是关系。</li>
+<li>在二维表中惟一标识元组的最小属性值称为该表的键或<strong>码</strong>。</li>
+<li>三类数据约束，它们是<strong>实体完整性约束</strong>、<strong>参照完整性约束</strong>以及<strong>用户定义的完整性约束</strong>。其中实体完整性约束、参照完整性约束必须满足的完整性约束条件。参照完整性约束不允许关系应用不存在的元组。实体完整性约束要求关系的主键中属性值不能为空，这是数据库完整性的最基本要求。</li>
+<li>投影：一元运算，对一个关系进行垂直切割，消去某些列。</li>
+<li>除：给定关系R（X，Y）和S（Y，Z），其中X，Y，Z是属性组，R中的Y和S中Y可以有不同的属性名，但必须出自相同的域集。</li>
+<li>自然连接满足的条件是<br>（1）两关系间有公共域<br>（2）通过公共域的相等值进行连接。</li>
+<li><strong>数据库设计</strong><br>①<strong>面向数据</strong>的方法是以信息需求为主，兼顾处理需求；<br>②<strong>面向过程</strong>的方法是以处理需求为主，兼顾信息需求。<br>由于数据在系统中稳定性高，数据已成为系统的核心，故面向数据的设计方法已成为主流。</li>
+<li>数据库设计生命周期：需求分析阶段、概念设计阶段、逻辑设计阶段、物理设计阶段。</li>
+<li>规范化：一个低一级范式的关系模式，通过模式分解转化为若干个高一级范式的关系模式的集合。</li>
+<li><strong>概念结构设计</strong>是将需求分析阶段得到的用户需求抽象为信息结构即概念模型的过程，它是整个数据库设计的<strong>关键</strong>。</li>
+<li>逻辑结构设计的任务是将E—R图转换成关系数据模型的过程。</li>
+<li>常用的存取方法：索引方法，聚簇方法和HASH方法。</li>
+<li>数据库概念设计的过程中，视图设计一般有三种设计次序：<br>①<strong>自顶向下</strong>。这种方法是先从抽象级别高且普遍性强的对象开始逐步细化、具体化与特殊化。<br>②<strong>由底向上</strong>。这种设计方法是先从具体的对象开始，逐步抽象，普遍化与一般化，最后形成一个完整的视图设计。<br>③<strong>由内向外</strong>。这种设计方法是先从最基本与最明显的对象着手逐步扩充至非基本、不明显的其它对象。</li>
+<li><strong>分布式数据库系统</strong>具有<strong>数据分布性</strong>、<strong>逻辑整体性</strong>、<strong>位置透明性</strong>和<strong>复制透明性</strong>的特点。</li>
+</ol>
+<hr>
+<p>来源：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/100698395">https://zhuanlan.zhihu.com/p/100698395</a></p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">Jayfar</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/')">公共基础知识[计算机理论]</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://img.wjwj.top/2025/01/21/2e5add80fb097756ec66f4fe3a8c8318.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/21/2e5add80fb097756ec66f4fe3a8c8318.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://img.wjwj.top/2025/01/21/f1b0b2d68d1c80ef1a19ebdb218a0b1a.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/21/f1b0b2d68d1c80ef1a19ebdb218a0b1a.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=公共基础知识[计算机理论]&amp;url=http://101.132.143.244/2020/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA[%E5%85%AC%E5%85%B1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86]/&amp;pic=" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://101.132.143.244" target="_blank">Jayfar</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>计算机理论<span class="tagsPageCount">3</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://img.wjwj.top/2025/01/25/c0a30969ad2ab922497475c6a72e8d9b.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2020/03/12/Java%5B%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%5D/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">垃圾回收机制[Java]</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/2020/04/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA%5B%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%5D/" title="正则表达式[Computers]"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2020-04-20</div><div class="title">正则表达式[Computers]</div></div></a></div><div><a href="/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA%5B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0%5D/" title="计算机系统概述[计算机理论]"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2020-03-19</div><div class="title">计算机系统概述[计算机理论]</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">Jayfar</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/BorenHU/Jarfar/tree/master" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/367252456" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://img.wjwj.top/2025/01/21/8a39f5bf30e5ec7ea4c04d373d59a38e.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">一、数据结构与算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80"><span class="toc-number">2.</span> <span class="toc-text">二、程序设计基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">三、软件工程基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80"><span class="toc-number">4.</span> <span class="toc-text">四、数据库设计基础</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/01/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/" title="网站安全测试"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/25/c0a30969ad2ab922497475c6a72e8d9b.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网站安全测试"/></a><div class="content"><a class="title" href="/2025/01/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95/" title="网站安全测试">网站安全测试</a><time datetime="2025-01-23T02:12:54.000Z" title="发表于 2025-01-23 10:12:54">2025-01-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/01/21/hello-world/" title="Hello World"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/25/9c43255124e1ee82363800422621093c.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2025/01/21/hello-world/" title="Hello World">Hello World</a><time datetime="2025-01-21T11:23:35.240Z" title="发表于 2025-01-21 19:23:35">2025-01-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/05/05/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%5BTCP%E4%BC%A0%E8%BE%93&amp;&amp;UDP%E4%BC%A0%E8%BE%93%5D/" title="TCP传输&amp;&amp;UDP传输[网络编程]">TCP传输&amp;&amp;UDP传输[网络编程]</a><time datetime="2020-05-05T15:40:59.000Z" title="发表于 2020-05-05 23:40:59">2020-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/05/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%5B%E9%93%BE%E8%A1%A8%E5%92%8C%E9%80%92%E5%BD%92%5D/" title="链表和递归[数据结构与算法]">链表和递归[数据结构与算法]</a><time datetime="2020-05-05T07:02:46.000Z" title="发表于 2020-05-05 15:02:46">2020-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2020/05/02/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%5B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%5D/" title="基本概念[网络编程]">基本概念[网络编程]</a><time datetime="2020-05-02T04:33:38.000Z" title="发表于 2020-05-02 12:33:38">2020-05-02</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:1637941914@qq.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/6226382705" title="微博"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a><a class="deal_link" href="/atom.xml" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.wjwj.top/2025/01/21/5e54e54be63cf31850a4330a66ca9e17.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/BorenHU/Jarfar/tree/master" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/367252456" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" href="/copyright" title="CC"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="十年之约" target="_blank" rel="noopener" href="https://www.foreverblog.cn/">十年之约</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" href="/docs/">文档</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a><a class="footer-item" title="更新日志" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2025 By <a class="footer-bar-link" href="/" title="Jayfar" target="_blank">Jayfar</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/BorenHU/Jarfar/tree/master" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">62</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">13</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 资源</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/tags/Self-investment/"><i class="anzhiyufont anzhiyu-icon-anzhiyu faa-tada" style="font-size: 0.9em;"></i><span> 提升</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 书架</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 0.88rem;">C语言<sup>7</sup></a><a href="/tags/English/" style="font-size: 0.88rem;">English<sup>1</sup></a><a href="/tags/GUI/" style="font-size: 0.88rem;">GUI<sup>1</sup></a><a href="/tags/Html/" style="font-size: 0.88rem;">Html<sup>1</sup></a><a href="/tags/Java/" style="font-size: 0.88rem;">Java<sup>36</sup></a><a href="/tags/JavaScript/" style="font-size: 0.88rem;">JavaScript<sup>1</sup></a><a href="/tags/LeetCode/" style="font-size: 0.88rem;">LeetCode<sup>2</sup></a><a href="/tags/Linux/" style="font-size: 0.88rem;">Linux<sup>1</sup></a><a href="/tags/MySql/" style="font-size: 0.88rem;">MySql<sup>1</sup></a><a href="/tags/Self-investment/" style="font-size: 0.88rem;">Self-investment<sup>1</sup></a><a href="/tags/Web%E5%89%8D%E7%AB%AF/" style="font-size: 0.88rem;">Web前端<sup>1</sup></a><a href="/tags/WechatApplet/" style="font-size: 0.88rem;">WechatApplet<sup>1</sup></a><a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 0.88rem;">多线程<sup>11</sup></a><a href="/tags/%E6%8C%87%E9%92%88/" style="font-size: 0.88rem;">指针<sup>2</sup></a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 0.88rem;">数据结构与算法<sup>10</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" style="font-size: 0.88rem;">网络安全<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" style="font-size: 0.88rem;">网络编程<sup>2</sup></a><a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 0.88rem;">虚拟机<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/" style="font-size: 0.88rem;">计算机理论<sup>3</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"><a class="tag-list" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">前端</a><a class="tag-list" href="/tags/Hexo" title="Hexo">Hexo</a></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/playlist?id=426681132&amp;uct2=U2FsdGVkX19BO4fIzYfvmKQmydOzmm66NMhOJQNvinw=&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("1/21/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2025 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Jayfar 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script src="https://cdn.cbd.int/algoliasearch@4.18.0/dist/algoliasearch-lite.umd.js"></script><script src="https://cdn.cbd.int/instantsearch.js@4.60.0/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.cbd.int/mermaid@10.2.4/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  anzhiyu.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo-seven-delta-80.vercel.app',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.39/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-seven-delta-80.vercel.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo-seven-delta-80.vercel.app',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.39/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
