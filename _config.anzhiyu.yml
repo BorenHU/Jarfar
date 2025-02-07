@@ -13,8 +13,8 @@ menu:
     留言板: /comments/ || anzhiyu-icon-envelope
 
   关于:
-    关于本人: /about/ || anzhiyu-icon-paper-plane
-    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+    关于本站: /about/ || anzhiyu-icon-paper-plane
+    # 闲言碎语: /essay/ || anzhiyu-icon-lightbulb
     随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
@@ -729,7 +729,7 @@ ClickShowText:
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化页面显示)
 beautify:
@@ -811,8 +811,12 @@ aside:
     name_link: /
 
   card_announcement:
-    enable: false
-    content: 
+    enable: false # 必须开启
+    content: <span>👋🏻 Hi，我是Jayfar，欢迎您！</span><br>
+            <span>❓ 如有问题欢迎评论区交流！</span><br>
+            <span>😫 页面异常？尝试<kbd>Ctrl</kbd>+<kbd>F5</kbd></span><br>
+            <span>📧 如需联系我：<a href="mailto:1637941914@qq.com"><b>发送邮件🚀</b></a></span>
+            <div id="welcome-info"></div> # 必须项
   card_weixin:
     enable: true
     face: https://bu.dusays.com/2023/01/13/63c02edf44033.png
@@ -1243,7 +1247,7 @@ inject:
 
   bottom:
     # 自定义js
-    # - <script src="/js/xxx"></script>
+    - <script src="/api/card-welcome.js"></script>
     # - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
     # - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     # - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>

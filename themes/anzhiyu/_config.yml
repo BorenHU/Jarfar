@@ -13,8 +13,8 @@ menu:
     留言板: /comments/ || anzhiyu-icon-envelope
 
   关于:
-    关于本人: /about/ || anzhiyu-icon-paper-plane
-    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+    关于本站: /about/ || anzhiyu-icon-paper-plane
+    # 闲言碎语: /essay/ || anzhiyu-icon-lightbulb
     随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
