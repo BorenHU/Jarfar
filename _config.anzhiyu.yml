@@ -43,7 +43,7 @@ mourn:
 # Code Blocks (代码相关)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -243,7 +243,7 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://img.wjwj.top/2025/01/21/2e5add80fb097756ec66f4fe3a8c8318.png
+    - img: https://img.wjwj.top/2025/02/08/7b70282097ddf360b6ce442635a3744e.png
       link:
       text: 微信
     - img: https://img.wjwj.top/2025/01/21/f1b0b2d68d1c80ef1a19ebdb218a0b1a.png
@@ -811,11 +811,9 @@ aside:
     name_link: /
 
   card_announcement:
-    enable: false # 必须开启
+    enable: true # 必须开启
     content: <span>👋🏻 Hi，我是Jayfar，欢迎您！</span><br>
             <span>❓ 如有问题欢迎评论区交流！</span><br>
-            <span>😫 页面异常？尝试<kbd>Ctrl</kbd>+<kbd>F5</kbd></span><br>
-            <span>📧 如需联系我：<a href="mailto:1637941914@qq.com"><b>发送邮件🚀</b></a></span>
             <div id="welcome-info"></div> # 必须项
   card_weixin:
     enable: true
@@ -1062,12 +1060,12 @@ home_top:
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 资源
+    - name: 认知
       path: /categories/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 软件
+    - name: 笔记
       path: /categories/
       shadow: var(--anzhiyu-shadow-green)
       class: green
@@ -1132,7 +1130,7 @@ comment_barrage_config:
 # https://github.com/metowolf/MetingJS
 nav_music:
   enable: true
-  console_widescreen_music: true # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
+  console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 13274696716
   server: netease
   volume: 0.7 # 默认音量
@@ -1247,7 +1245,7 @@ inject:
 
   bottom:
     # 自定义js
-    - <script src="/api/card-welcome.js"></script>
+    - <script src="/card-welcome.js"></script>
     # - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
     # - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     # - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>

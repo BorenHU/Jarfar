@@ -68,14 +68,14 @@
   buff:
     buff_tips: 特长
     buff_top: 脑回路新奇的 逻辑鬼才
-    buff_bottom: 现实指数 MAX
+    buff_bottom: 理性指数 MAX
   game:
     game_tips: 爱好游戏
     game_title: 炉石传说
     game_uid: ""
     game_bg: https://img.wjwj.top/2025/01/24/c21c026156e4ec6cf46479718ef4d9f2.jpg
   comic:
-    comic_tips: 爱好
+    comic_tips: 持续
     comic_title: 成长
     comic_list:
       - name: 游泳
@@ -94,8 +94,8 @@
         href: #https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
         cover: https://img.wjwj.top/2025/01/25/648750a2279ca0171a903e1dcbfb51b7.jpg
   like:
-    like_tips: 关注偏好
-    like_title: 自我提升
+    like_tips: 偏好
+    like_title: 突破
     like_bg: https://img.wjwj.top/2025/01/24/ed58743f3478c04e7fcda6681b3d50b8.jpg
     like_bottom: 
   music:

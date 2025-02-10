@@ -249,7 +249,7 @@ const greetings = {
 		"黑龙江省": "很喜欢哈尔滨大剧院",
 		"上海市": "众所周知，中国只有两个城市",
 		"江苏省": {
-			"南京市": "这是我挺想去的城市啦",
+			"南京市": "我们在一个城市",
 			"苏州市": "上有天堂，下有苏杭",
 			"其他": "散装是必须要散装的"
 		},
@@ -350,9 +350,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	insertAnnouncementComponent();
 	document.addEventListener('pjax:complete', insertAnnouncementComponent);
 });
-
-
-作者: 時光
-链接: https://blog.shiguang666.eu.org/2024/10/25/cc0c59621a43/#%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88
-来源: 時光
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
