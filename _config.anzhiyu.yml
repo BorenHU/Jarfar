@@ -8,6 +8,7 @@ menu:
     提升: /tags/Self-investment/ || anzhiyu-icon-anzhiyu
     书架: /equipment/ || anzhiyu-icon-book
 
+
   友链:
     友人帐: /link/ || anzhiyu-icon-link
     留言板: /comments/ || anzhiyu-icon-envelope
@@ -19,9 +20,9 @@ menu:
 
 # nav相关配置
 nav:
-  enable: false
+  enable: true
   travelling: true
-  clock: true
+  clock: false
   menu:
     - title: 网页
       item:
@@ -30,20 +31,20 @@ nav:
           icon: /img/favicon.ico
     - title: 项目
       item:
-        - name: 安知鱼图床
-          link: https://image.anheyu.com/
-          icon: https://image.anheyu.com/favicon.ico
+        - name: webStacks
+          link: https://justnav.us.kg/
+          icon: https://img.wjwj.top/2025/02/11/8cfc1ac83f2552ef2e6c8e8a0b68540b.png
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
 mourn:
-  enable: false
+  enable: true
   days: [4-5, 5-12, 7-7, 9-18, 12-13]
 
 # Code Blocks (代码相关)
 # --------------------------------------
 
-highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -63,7 +64,7 @@ copy:
 # formal:
 #   name: link || icon
 social:
-  Github: https://github.com/BorenHU/Jarfar/tree/master || anzhiyu-icon-github
+  Github: https://docs.anheyu.com/ || anzhiyu-icon-github
   BiliBili: https://space.bilibili.com/367252456 || anzhiyu-icon-bilibili
 
 # 作者卡片 状态
@@ -214,7 +215,7 @@ index_post_content:
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Post
 # --------------------------------------
@@ -230,7 +231,7 @@ toc:
 post_copyright:
   enable: true
   decode: false
-  author_href:
+  author_href: https://jayfar.top/
   location: 南京
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -473,7 +474,7 @@ footer:
         icon: anzhiyu-icon-rss
     right:
       - title: Github
-        link: https://github.com/BorenHU/Jarfar/tree/master
+        link: https://docs.anheyu.com/
         icon: anzhiyu-icon-github
       - title: Bilibili
         link: https://space.bilibili.com/367252456
@@ -488,18 +489,18 @@ footer:
     enable: true
     randomFriends: 3
     project:
-      - title: 服务
+      - title: 项目
         links:
-          - title: 51la统计
-            link: https://v6.51.la/
-          - title: 十年之约
-            link: https://www.foreverblog.cn/
+          - title: Jayfar
+            link: https://jayfar.top/
+          - title: webStacks
+            link: https://justnav.us.kg/
           - title: 开往
             link: https://github.com/travellings-link/travellings
       - title: 主题
         links:
           - title: 文档
-            link: /docs/
+            link: https://docs.anheyu.com/
           - title: 源码
             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
           - title: 更新日志
@@ -509,7 +510,7 @@ footer:
           - title: 即刻短文
             link: /essay/
           - title: 友链文章
-            link: /fcircle/
+            link: /link/
           - title: 留言板
             link: /comments/
       - title: 协议
@@ -527,7 +528,7 @@ footer:
       enable: false
       link: /copyright
     linkList:
-      - link: https://github.com/BorenHU/Jarfar/tree/master
+      - link: https://docs.anheyu.com/
         text: 主题
       # - link: https://image.anheyu.com
       #   text: 图床
@@ -742,8 +743,8 @@ beautify:
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size: 16px
-  code-font-size:
-  font-family:
+  code-font-size: 14px
+  font-family: "Quicksand, Poppins, Nunito, PingFang SC, Microsoft YaHei, sans-serif"
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
